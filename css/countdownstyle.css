@@ -1,0 +1,58 @@
+*{
+    font-family: "monospace", sans-serif;
+    color: white;
+}
+.title{
+    text-align: center;
+    font-size: 75px;
+}
+.body{
+    background: linear-gradient(to right, red, orangered, darkorange, orange, yellow, yellowgreen, greenyellow, lawngreen, green, blue, darkblue, purple, rebeccapurple, mediumpurple, pink, hotpink, deeppink);
+    animation: bganimation 35s linear;
+    background-size: 900%;
+}
+@keyframes bganimation {
+    0%{
+    background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.page{
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+}
+.countdown-col{
+    /*background: url() no-repeat center;*/
+    background-size: cover;
+}
+.time{
+    color: #fff;
+    text-transform: uppercase;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+.time span{
+    padding: 0 50px;
+    font-size: 50px;
+}
+.time span div{
+    font-size: 70px;
+}
+.links{
+    font-family: "monospace", sans-serif;
+    padding: 0 5px;
+}
